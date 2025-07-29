@@ -6,7 +6,7 @@ import { LiveProgressCircle } from "./LiveCircleProgress";
 import { formatMatchDate } from "@/utils/formatMatchDate";
 
 const Card = styled.div`
-  background: rgb(75, 72, 72);
+  background: rgb(56, 54, 54);
   border-radius: 12px;
   padding: 16px;
   text-align: center;
