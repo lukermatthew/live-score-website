@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Welcome to Live Score Website
 
-## Getting Started
+Present the data with designs from in the link below, the website should be designed
+that its responsive (if the status type for the match is “inprogress” then you should
+display an indicator that the match is LIVE and ongoing):
 
-First, run the development server:
+![App Preview](./public/Screenshot%202025-07-29%20at%205.12.56 PM.png)
+
+---
+
+## ✨ Features
+
+The user should also be able to filter the data based on the following filters (you should
+show a count of matches per filter) this example shows a single record in the file for an
+upcoming match :
+
+ALL -> No Filters, Result => status.type == finished, Live => status.type ==
+inprogress, Upcoming => status.type == notstarted
+For the filters, you can use any design style you wish as long as the counters are
+displayed and the user can easily select the type of filter he/she wishes to see.
+
+---
+
+## 🔧 Tech Stack
+
+- **Next JS** (Functional + Hooks)
+- **TypeScript**
+- **StyledComponents** or scoped `.css` for styling
+- **Vitest, React Testing library**
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
 
 ```bash
+git clone https://github.com/lukermatthew/live-score-website.git
+cd live-score-website
+
+
+2. Install Dependencies
+npm install
+
+
+3. Start the Development Server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+3. For the testing
+npm test
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
